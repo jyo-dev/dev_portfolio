@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Descrição do site">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Nome do site">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="programmer.png"/>
+
+  <title>Arun Jyothis</title>
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Lottie Web -->
+  <script src="https://unpkg.com/lottie-web/build/player/lottie.min.js"></script>
+
+  <!-- Styles -->
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      background: #FCFCFD;
+    }
+
+    .container {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .indicator {
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div id="loading_indicator" class="container">
+    <div id="lottie" class="indicator"></div>
+  </div>
+
+  <!-- Load Flutter app -->
+  <script src="flutter_bootstrap.js" async></script>
+
+  <!-- Lottie animation script -->
+  <script>
+    lottie.loadAnimation({
+      container: document.getElementById('lottie'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: './assets/animation.json' // Your Lottie JSON path
+    });
+
+  </script>
+</body>
+</html>
