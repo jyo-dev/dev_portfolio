@@ -7,6 +7,7 @@ import 'package:dev_portfolio/core/widgets/responsive_layout.dart';
 import 'package:dev_portfolio/presentation/bloc/screen_cubit.dart';
 import 'package:dev_portfolio/presentation/project%20core/widgets/client_logo.dart';
 import 'package:dev_portfolio/presentation/project%20core/widgets/detailed_projects.dart';
+import 'package:dev_portfolio/presentation/project%20core/widgets/open_source.dart';
 import 'package:dev_portfolio/presentation/projects/widgets/project_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -499,6 +500,8 @@ class _MainProjectScreenState extends State<MainProjectScreen> {
             ),
           ),
           SizedBox(height: 20),
+          OpenSourceWidget(),
+          SizedBox(height: 30),
           ClientLogosSection(),
         ],
       ),

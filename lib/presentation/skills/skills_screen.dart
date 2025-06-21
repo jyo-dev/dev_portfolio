@@ -63,7 +63,7 @@ class SkillsScreen extends StatelessWidget {
                 ),
                 SkillWidgets(
                   skillName: "State Management",
-                  skills: ["Bloc", "Provider", "Riverpod"],
+                  skills: ["Bloc", "Provider", "Riverpod", "GetX"],
                 ),
                 SkillWidgets(
                   skillName: "Other",

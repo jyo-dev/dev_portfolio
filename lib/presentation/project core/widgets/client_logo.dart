@@ -36,41 +36,35 @@ class ClientLogosSection extends StatelessWidget {
       mobile: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Padding(
-            padding: const EdgeInsets.only(left: 10),
-            child: RichText(
-              text: TextSpan(
-                children: [
-                  TextSpan(
-                    text: "Companies I’ve worked with",
-                    style: GoogleFonts.poppins(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black87,
-                    ),
+          RichText(
+            text: TextSpan(
+              children: [
+                TextSpan(
+                  text: "Companies I’ve worked with",
+                  style: GoogleFonts.poppins(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black87,
                   ),
-                  TextSpan(
-                    text: ".",
-                    style: GoogleFonts.poppins(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      color: const Color(0xFF7A3FFF),
-                      height: 0.9,
-                    ),
+                ),
+                TextSpan(
+                  text: ".",
+                  style: GoogleFonts.poppins(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: const Color(0xFF7A3FFF),
+                    height: 0.9,
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(left: 10),
-            child: Text(
-              "(via Riafy & Sysfore)",
-              style: GoogleFonts.poppins(
-                fontSize: 13,
-                fontWeight: FontWeight.w400,
-                color: Colors.grey[700],
-              ),
+          Text(
+            "(via Riafy & Sysfore)",
+            style: GoogleFonts.poppins(
+              fontSize: 13,
+              fontWeight: FontWeight.w400,
+              color: Colors.grey[700],
             ),
           ),
           const SizedBox(height: 16),
@@ -99,30 +93,27 @@ class ClientLogosSection extends StatelessWidget {
       other: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Padding(
-            padding: const EdgeInsets.only(left: 10),
-            child: RichText(
-              text: TextSpan(
-                children: [
-                  TextSpan(
-                    text: "Companies I’ve worked with",
-                    style: GoogleFonts.poppins(
-                      fontSize: 38,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black87,
-                    ),
+          RichText(
+            text: TextSpan(
+              children: [
+                TextSpan(
+                  text: "Companies I’ve worked with",
+                  style: GoogleFonts.poppins(
+                    fontSize: 38,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black87,
                   ),
-                  TextSpan(
-                    text: ".",
-                    style: GoogleFonts.poppins(
-                      fontSize: 38,
-                      fontWeight: FontWeight.bold,
-                      color: const Color(0xFF7A3FFF),
-                      height: 0.9,
-                    ),
+                ),
+                TextSpan(
+                  text: ".",
+                  style: GoogleFonts.poppins(
+                    fontSize: 38,
+                    fontWeight: FontWeight.bold,
+                    color: const Color(0xFF7A3FFF),
+                    height: 0.9,
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
           Padding(
