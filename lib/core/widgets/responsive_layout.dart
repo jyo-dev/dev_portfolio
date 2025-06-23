@@ -45,3 +45,13 @@ Widget responsiveLayout({required Widget mobile, required Widget other}) {
     },
   );
 }
+
+Widget responsiveBuilder(Widget Function(BuildContext context, bool isMobile) builder) {
+  return LayoutBuilder(
+    builder: (context, constraints) {
+      bool isMobile = constraints.maxWidth < 900;
+      return builder(context, isMobile);
+    },
+  );
+}
+
