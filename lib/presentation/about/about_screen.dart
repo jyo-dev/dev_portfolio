@@ -133,8 +133,8 @@ class AboutScreen extends StatelessWidget {
           padding: const EdgeInsets.all(20.0),
           child: QuoteWidget(
             quote:
-                "I may not have gone where I intended to go, but I think I have ended up where I needed to be.",
-            author: "Douglas Adams",
+                "The darkest hour is just before the dawn.",
+            author: "English Proverb",
           ),
         ),
         Padding(
