@@ -420,8 +420,10 @@ class _MainProjectScreenState extends State<MainProjectScreen> {
                 height: isExpanded
                     ? isMob
                           ? 700
-                          : 900
-                    : 440,
+                          : 1200
+                    : isMob
+                    ? 440
+                    : 650,
                 autoPlay: isAutoPlay,
                 onPageChanged: (index, reason) {
                   currentIndex = index;
